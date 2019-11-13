@@ -23,9 +23,23 @@ public class njjj {
 			}
 			q++;
 			if(q>50)
-				continue;	
-			System.out.println(""+q+":\t"+m+o+n+"=");
+				continue;
+			if((q-1)%5==0)
+				System.out.println();
+			System.out.print(""+q+":\t"+m+o+n+"="); 
+				sum(m,n,ov);
 		}
 	}
-
+	public static void sum(int m,int n,int ov){
+		int x;
+		if(ov==1){
+			x=m+n;
+		}
+		else{
+			x=m-n;
+		}
+		System.out.print(x);
+		System.out.print("  ");
+	}
 }
+
