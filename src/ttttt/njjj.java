@@ -6,13 +6,13 @@ public class njjj {
 		// TODO Auto-generated method stub
 		int m=0,n=0,ov=0,q=0;
 		char o='+';
-		for(int i=0;i<150;i++){
+		for(int i=0;i<200;i++){
 			ov=(int)(Math.random()*2);
 			m=(int)(Math.random()*100);
 			n=(int)(Math.random()*100);
 			if(ov==1){
 				o='+';{
-					if(m+n>100)
+					if(m+n>100) 
 						continue;
 				}
 			}else {
@@ -23,8 +23,7 @@ public class njjj {
 			}
 			q++;
 			if(q>50)
-				continue;
-				
+				continue;	
 			System.out.println(""+q+":\t"+m+o+n+"=");
 		}
 	}
